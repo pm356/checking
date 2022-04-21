@@ -1,4 +1,4 @@
-#from tkinter import messagebox
+
 import sys
 import subprocess
 import pkg_resources
@@ -35,7 +35,5 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get("http://www.python.org")
-
-#messagebox.showinfo("Information","Informative message")
 
 print("hi")
