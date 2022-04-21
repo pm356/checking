@@ -1,4 +1,4 @@
-# from tkinter import messagebox
+
 import sys
 import subprocess
 import pkg_resources
@@ -28,14 +28,16 @@ def install_packages(requirement_list):
     except Exception as e:
         print(e)
         
-install_packages(['selenium','webdriver-manager'])
+install_packages(['tk'])
+from tkinter import messagebox
+# install_packages(['selenium','webdriver-manager'])
 
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+# from selenium import webdriver
+# from webdriver_manager.chrome import ChromeDriverManager
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
-driver.get("http://www.python.org")
+# driver = webdriver.Chrome(ChromeDriverManager().install())
+# driver.get("http://www.python.org")
 
-# messagebox.showinfo("Information","Informative message")
+messagebox.showinfo("Information","Informative message")
 
 print("hi")
